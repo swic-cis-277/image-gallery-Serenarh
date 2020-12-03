@@ -1,3 +1,8 @@
+:root {
+  --contrast: 100%;
+  --hue: 0deg;
+}
+
 body {
   background-color: #333;
   color: #f5f5f5;
@@ -52,6 +57,7 @@ main,
 #display img {
   border: 1px solid #ffc922;
   border-radius: 4px;
+  filter: grayscale(80%);
   max-height: 40vh; /* 40% of viewport height */
 }
 
