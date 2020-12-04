@@ -1,4 +1,5 @@
 :root {
+  --colorcontrol: 0%;
   --contrast: 100%;
   --hue: 0deg;
 }
@@ -57,7 +58,9 @@ main,
 #display img {
   border: 1px solid #ffc922;
   border-radius: 4px;
-  filter: grayscale(80%);
+
+  /* filter: grayscale(80%); */
+  filter: grayscale(var(--colorcontrol));
   max-height: 40vh; /* 40% of viewport height */
 }
 
