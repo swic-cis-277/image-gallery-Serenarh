@@ -41,7 +41,7 @@ main {
   width: 100vw;
 }
 
-#film-strip {
+#film-strip.container {
   border-bottom: 1px solid #f5f5f5;
   border-top: 1px solid #f5f5f5;
   max-width: 1200px;
@@ -62,6 +62,11 @@ main,
   align-items: center;
 }
 
+.container img {
+  height: auto;
+  width: 100%;
+}
+
 #display img {
   border: 1px solid #ffc922;
   border-radius: 4px;
@@ -72,7 +77,31 @@ main,
 }
 
 /* pseudo-selector (only applies rule when the element is in a specific state */
-#film-strip img:focus,
-#film-string img:hover {
+#film-strip.container img:focus,
+#film-string.container img:hover {
   cursor: pointer;
+}
+
+.container {
+  max-width: 1200px;
+  position: relative;
+  width: 100%;
+}
+
+.container .btn {
+  background-color: #555;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 10px;
+  left: 10%;
+  padding: 5px 10px;
+  position: absolute;
+  text-align: center;
+  top: 10%;
+}
+
+.container .btn:hover {
+  background-color: black;
 }

@@ -15,3 +15,7 @@ fsImages.forEach(function (fsImage) {
     displayImage.alt = event.target.alt;
   });
 });
+
+fsImages.forEach.button(function (copy) {
+  copy.addEventListener("click", function (event) {});
+});
