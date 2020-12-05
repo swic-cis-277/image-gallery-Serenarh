@@ -13,6 +13,14 @@ body {
   text-align: center;
 }
 
+button {
+  background-color: black;
+  border-color: transparent;
+  border-radius: 4px;
+  color: white;
+  padding: 0.5rem;
+}
+
 figure {
   margin: 0;
   padding: 0;
@@ -57,7 +65,9 @@ main,
 #display img {
   border: 1px solid #ffc922;
   border-radius: 4px;
-  filter: grayscale(80%);
+
+  /* filter: grayscale(80%); */
+  filter: grayscale(0);
   max-height: 40vh; /* 40% of viewport height */
 }
 
